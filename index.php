@@ -10,12 +10,13 @@
 <!DOCTYPE html>
     <html lang="fr">
             <head>
+            <script src="src/app/all/bkz.js"></script><!--  ★♨=ls0001  ☆   -->
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <meta http-equiv="X-UA-Compatible" content="ie=edge">
         </head>
           <title>Document</title>
-            <body id="body" onscroll="windowscrollY()">
+            <body id="body">
                 <script type="text/javascript">
                     window.onload = document.getElementById('body').style.display='none';
                 //  ★   n'affiche pas la page pendant le chargement debut ♨=#ix0001
@@ -30,14 +31,4 @@
             //  affiche la page apres le chargement ♨=#ix0001   ☆
         </script>
     </html>
-<script>
-/*  
-Exemple de code javascript
-  ok = new IdentificationHtml("p","val"); // ajouter une valeur dans le bady 
-  ok.set_text("Mon text") ;  // attribuer un test
-  ok.set_attribute("class","maClassokp") ; // atribuer une classe
-  exemple n°2
-  ok = new IdentificationHtml("p","val","ajoutervaleurdanscetelementexistant"); // ajouter une valeur dans un element donne id existant 
-  /*
-</script>
 <style>

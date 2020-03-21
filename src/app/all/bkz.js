@@ -17,11 +17,12 @@ class IdentificationHtmlModel1
       document.getElementById(this.idParent).appendChild(node);  
      }  
   }
-                get idParent_()
+                 idParent_()
                 {
                     return this.idParent ; 
                     // retourne la valeur du parent                   
                 }
+    
                   set_attribute(type,valeur)
                 {
                     document.getElementById(this.iD).setAttribute(type,valeur); 
@@ -73,4 +74,5 @@ exemple de code :
   ok.set_text("Mon text") ; 
   ok.set_attribute("class","maClassokp") ; 
 */
+
 console.log("création de ndenga luvumbu Bokonzi") ;
