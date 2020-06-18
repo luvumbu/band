@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+ 
+	<div id="app">
+		<div class="display-flex-1">
+			<div class="display-flex">
+				<div class="header-hover">{{text1}}</div>
+				<div class="header-hover">{{text2}}</div>
+				<div class="header-hover">{{text3}}</div>
+				<div class="header-hover">{{text4}}</div>			
+			</div>
+			<div class="padding-15px">			
+				<div>
+					recherche
+				</div>
+			</div>
+		</div>		 
+		<img :src="source" class="img-fluid" alt="Responsive image">
+	<div class="header-1">
+		 {{info}}
+	</div>	
+	<div style="text-align: center;">
+		{{info2}}
+	</div>
+	<div class="text-center">
+		We have created a fictional band website. 
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+		 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+		 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+		 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+		 reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+			 mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+			 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+			 laboris nisi ut aliquip ex ea commodo consequat.
+	</div>
+<div class="flex-x">
+	<figure>
+		<img :src="sourceimg" alt="Une superbe photo">			
+		<figcaption class="text-align-center">{{namecaption1}}</figcaption>
+	</figure>
+	<figure>
+		<img :src="sourceimg" alt="Une superbe photo">			
+		<figcaption class="text-align-center">{{namecaption2}}</figcaption>
+	</figure>
+	<figure>
+		<img :src="sourceimg" alt="Une superbe photo">			
+		<figcaption class="text-align-center">{{namecaption3}}</figcaption>
+	</figure>
+</div>
+	</div>
+	<div>
+		<h1 class="text-align-center">TOUR DATES</h1>
+		<i class="text-align-center">Remember to book your tickets!</i>
+	</div>	
+ 
+ <style>
+	 .text-align-center {
+		 text-align: center;
+	 }
+	 .flex-x {
+		 display: flex;
+		 justify-content: space-around;
+		 flex-wrap: wrap;
+		 margin-top:100px;
+	 }
+	 .text-center {
+		margin: auto;
+		width: 90%;	 
+	 }
+	 .header-hover:hover {
+	transition: 1s all;
+	background-color: antiquewhite;
+	color: black;
+	cursor: pointer;
+	 }
+	 .header-hover {
+		 transition: 1s all;
+		 padding: 15px;
+		}
+	 .header-1 {
+		position: relative;
+		top: -300px;
+		font-size: 4em;
+		color: white;
+		text-align: center;
+	 }
+	 .display-flex-1 {
+		 display: flex;
+		 background-color: black;
+		 color:white;		 
+	 } 
+	 .padding-15px {
+		 background-color: beige;
+		 color: black;
+		 padding: 15px;
+	 }
+	 .display-flex {
+		 display: flex;
+	 }	 
+ </style>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script>
+		var app4 = new Vue({
+			el: '#app',
+			data: {
+				text1:"Home",
+				text2:"Band",
+				text3:"Tour",
+				text4:"More",
+				source:"img/bgc.jpg",
+				info:"Chicago",
+				info2:"THE BAND",
+				info3:"We love music",
+				sourceimg:"https://www.w3schools.com/w3images/bandmember.jpg",
+				namecaption1:"Caption",
+				namecaption2:"Caption",
+				namecaption3:"Caption"
+			 
+
+			}
+		})
+	</script>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+ </body>
+</html>
